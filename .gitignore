@@ -1,0 +1,8 @@
+
+# ignore font awesome files when pushing to production
+/webfonts
+css/all.css
+css/all.min.css
+
+# OS created files
+.DS_Store
