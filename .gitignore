@@ -6,3 +6,6 @@ css/all.min.css
 
 # OS created files
 .DS_Store
+
+# Ignore the caddy webserver file
+Caddyfile

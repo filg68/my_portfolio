@@ -1,12 +1,27 @@
+/* temporary styles - used for dev purposes */
+
+body {
+  border: 1px red solid;
+}
+
+header {
+  border: 1px blue solid;
+}
+
+div {
+  border: 1px gray solid;
+}
+
+
 /* global defaults */
 
 h1, h2, h3, h4 {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   font-weight: 400;
 }
 
 p, a{
-  font-family: 'Open Sans', sans-serif;
+  font-family: Open Sans, Helvetica, sans-serif;
 }
 
 
