@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4,  {
+h1, h2, h3, h4 {
   font-family: Roboto, Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -31,8 +31,7 @@ body {
   width: 100%;
   height: 100%;
 }
-
-/* header section styles */
+/**** desktop view header section styles ****/
 
 header {
   position: fixed;
@@ -43,6 +42,11 @@ header {
   padding: 0 0 0;
   overflow: auto;
   z-index:  11;
+}
+
+/* mobile first styling */
+.hide-when-mobile {
+  display: block;
 }
 
 .my-photo-md {
@@ -75,7 +79,7 @@ header {
   letter-spacing: 0px;
 }
 
-/* sidebar menu styling */
+/* sidebar menu  */
 ul#nav{
   list-style-type: none;
 }
@@ -85,7 +89,6 @@ ul#nav{
   padding-bottom: 40px;
   padding-top:  20px;
 }
-
 
 .site-menu-full{
   display: block;
@@ -112,7 +115,6 @@ ul#nav{
   letter-spacing: 0px;
   padding: 10px 20px;
   position: relative;
-  text-decoration: none;
   border-bottom: 1px solid #f5f5f5;
   outline: none;
 }
@@ -163,7 +165,61 @@ ul#nav{
   color: #aeaeae;
 }
 
+/**** mobile view header styles ****/
+
+.mobile-menu-container {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  left: 0;
+  right: 0;
+  height: 35px;
+
+}
+
+.my-photo-sm {
+  display: inline-block;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+.mobile-site-title-block {
+  display: inline-block;
+  height: 30px;
+}
+
+.mobile-site-title {
+  display: inline-block;
+  position: absolute;
+  padding-left: 5px;
+  margin-top: 5px;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.mobile-menu-icon {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  float: right;
+}
+
+.mobile-menu-icon i {
+  font-size: 1.6em;
+  color: #000;
+}
+
+.mobile-visible {
+  display: none;
+}
+
 /* media queries */
 
+@media screen and (max-width: 520px){
+  .mobile-visible {display:inline-block;}
+  .hide-when-mobile{left:-180px}
+}
 
 
