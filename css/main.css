@@ -46,11 +46,8 @@ header {
 
 /* mobile first styling */
 .hide-when-mobile {
-<<<<<<< HEAD
   display: block;
-=======
   display: none;
->>>>>>> 00f70de730f273a393fb06722e15c32f62d25b3e
 }
 
 .my-photo-md {
@@ -215,7 +212,6 @@ ul#nav{
   color: #000;
 }
 
-<<<<<<< HEAD
 .mobile-visible {
   display: none;
 }
@@ -226,14 +222,12 @@ ul#nav{
   .mobile-visible {display:inline-block;}
   .hide-when-mobile{left:-180px}
 }
-=======
 /* media queries */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 521px) {
   .hide-when-mobile {display: block;}
   .mobile-visible {display: none;}
 }
 
->>>>>>> 00f70de730f273a393fb06722e15c32f62d25b3e
 
 
