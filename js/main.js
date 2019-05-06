@@ -1,15 +1,22 @@
-//respond to click event of mobile menu icon
 
+// initialize event handlers for page
 $(function() {
-    let sideBar = $("#side-menu");
+    let sideMenu = $("#side-menu");
 
-
-
-    $("#menu-icon").click(function() {
-        let sideMenu = $("#side-menu");
-        sideMenu.toggleClass("mobile-header-view");
-        sideMenu.toggleClass("hide-when-mobile");
-
-        console.log('clicked', sideMenu.hasClass("mobile-header-view"));
+    //if not in mobile size remove mobile header view if attached
+    $( window ).resize(function() {
+        let screenWidth = $(window).width();
+        let showMainMenu = (screenWidth > 520 && sideMenu.hasClass("mobile-header-view"));
+        if (showMainMenu == true) { toggleSideMenu(sideMenu); }
     });
+
+    //toggle the side-menu in mobile view
+    $("#menu-icon").click(function() { toggleSideMenu(sideMenu); });
+
 });
+
+//shared utility functions
+function toggleSideMenu (objToToggle) {
+    objToToggle.toggleClass("mobile-header-view");
+    objToToggle.toggleClass("hide-when-mobile");
+}
