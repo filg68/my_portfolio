@@ -44,17 +44,17 @@
 /**** media queries ****/
 
 /* show mobile header for small screens */
-@media screen and (max-width: 520px){
+@media screen and (max-width: 768px){
   .mobile-visible {display:inline-block;}
-  .hide-when-mobile{left:-180px}
-  .main{top:50px;}
+  .hide-when-mobile{left:-180px;}
+  .main{top:50px;left:0;}
 }
 
-/* show header menu for large screens */
-@media screen and (min-width: 521px) {
+/* show side menu for large screens */
+@media screen and (min-width: 769px) {
   .hide-when-mobile {display: block;}
   .mobile-visible {display: none;}
-  .main{top:0px;}
+  .main{top:0px;left:200px;}
 }
 
 /* style to apply to side menu when in mobile mode */
@@ -63,4 +63,5 @@
   top: 50px;
   left: 0px;
   width: 300px;
+  box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.2);
 }
