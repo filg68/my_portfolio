@@ -12,12 +12,16 @@
 
 .my-photo-lg {
     flex: 50%;
-    height:60vh;
 }
 
-.my-photo-lg a img {
+#userpic {
+    background: url("https://via.placeholder.com/600x500.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    display: block;
+    height: 100%;
+    margin: 0;
 }
 
 .about-me-text {

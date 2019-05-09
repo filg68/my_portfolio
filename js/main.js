@@ -7,7 +7,7 @@ $(function() {
     $( window ).resize(function() {
         let screenWidth = $(window).width();
         let showMainMenu = (screenWidth > 768 && sideMenu.hasClass("mobile-header-view"));
-        if (showMainMenu == true) { toggleSideMenu(sideMenu); }
+        if (showMainMenu === true) { toggleSideMenu(sideMenu); }
     });
 
     //toggle the side-menu in mobile view
