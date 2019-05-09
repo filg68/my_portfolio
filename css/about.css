@@ -7,20 +7,56 @@
     flex-direction:row;
     top: 0;
     left: 0;
+    height: 75%;
 }
 
 .my-photo-lg {
     flex: 50%;
+    height:60vh;
 }
 
 .my-photo-lg a img {
     width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: block;
 }
 
 .about-me-text {
     flex: 50%;
-    background-color: white;
+    background-color: #fcfcfc;
+    height: 60vh;
+
+}
+
+.about-me-title {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #333333;
+    line-height: 1.25em;
+    font-size: 12px;
+    padding-top: 100px;
+    padding-left: 40px;
+}
+
+.about-me-name {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+    font-size: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+
+}
+
+.about-me-content{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #333333;
+    line-height: 1.5em;
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+
 }
