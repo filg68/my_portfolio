@@ -1,18 +1,16 @@
 /**** Styles About Me Image and Text ****/
 /* Fil Gambatesa - 2019 */
 
-.about-container {
+.bio-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
-    background-color: grey;
     top: 0;
     left: 0;
 }
 
 .my-photo-lg {
     flex: 50%;
-    background-color: purple;
 }
 
 .my-photo-lg a img {

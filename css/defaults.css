@@ -40,5 +40,6 @@ body {
   overflow-y:auto;
   overflow-x:hidden;
   width: calc(100% - 200px);
-  color: antiquewhite;
+  background-color: white;
+  height: 100%;
 }
