@@ -15,3 +15,8 @@ css/all.min.css
 
 # Ignore the caddy webserver file
 Caddyfile
+
+# Files used during development
+lazy_git
+.features_and_tasks.html
+.features_and_tasks.css

@@ -6,7 +6,7 @@ $(function() {
     //if not in mobile size remove mobile header view if attached
     $( window ).resize(function() {
         let screenWidth = $(window).width();
-        let showMainMenu = (screenWidth > 520 && sideMenu.hasClass("mobile-header-view"));
+        let showMainMenu = (screenWidth > 768 && sideMenu.hasClass("mobile-header-view"));
         if (showMainMenu == true) { toggleSideMenu(sideMenu); }
     });
 

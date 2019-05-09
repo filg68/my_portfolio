@@ -9,36 +9,44 @@
 .main {
   display:block;
   position:absolute;
-  top:50px;
-  padding-top: 50px;
+  top:0px;
   left:200px;
-  overflow:auto;
-  width: 100%;
-  background-color: antiquewhite;
+  overflow-y:auto;
+  overflow-x:hidden;
+  width: calc(100% - 200px);
+  color: antiquewhite;
  }
+/*TODO remove antiquewhite background color from main section*/
+/*TODO look into changing the default style for the scroll bars*/
 
 #about {
-  height: 1000px;
+
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
   background-color: grey;
-  width: 200px;
+  top: 0;
+  left: 0;
 }
 
-#resume {
-  height: 1000px;
+.my-photo-lg {
+  flex: 50%;
+  background-color: purple;
+}
+
+.my-photo-lg a img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-me-text {
+  flex: 50%;
   background-color: white;
-  width: 200px;
-}
-
-#portfolio {
-  height: 1000px;
-  background-color: grey;
-  width: 200px;
-}
-
-#contact {
-  height:1000px;
-  background-color: white;
-  width: 200px;
 }
 
 /**** media queries ****/
@@ -47,7 +55,12 @@
 @media screen and (max-width: 768px){
   .mobile-visible {display:inline-block;}
   .hide-when-mobile{left:-180px;}
-  .main{top:50px;left:0;}
+  .main{top:50px; left:0; width:100%;}
+  .about-container{flex-direction:column;}
+  .my-photo-lg{max-height:300px;}
+  .my-photo-lg a img {width:100%;}
+  .about-me-text{min-height:300px;}
+
 }
 
 /* show side menu for large screens */
