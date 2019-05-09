@@ -2,51 +2,55 @@
 
 @import 'defaults.css';
 @import 'menu.css';
+@import 'about.css';
 
+/**** NOTES  ****/
+/* defaults.css must be loaded first */
 
-/**** styles for main section of page ****/
-
-.main {
-  display:block;
-  position:absolute;
-  top:0px;
-  left:200px;
-  overflow-y:auto;
-  overflow-x:hidden;
-  width: calc(100% - 200px);
-  color: antiquewhite;
- }
 /*TODO remove antiquewhite background color from main section*/
 /*TODO look into changing the default style for the scroll bars*/
 
-#about {
-
+.what-I-do {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr 2fr 1fr 2fr;
+  grid-template-areas: "icon1 subtitl1 subtitl1 subtitl1 subtitl1 icon2 subtitl2 subtitl2 subtitl2 subtitl2" "..... content1 content1 content1 content1 ..... content2 content2 content2 content2" "icon3 subtitl3 subtitl3 subtitl3 subtitl3 icon4 subtitl4 subtitl4 subtitl4 subtitl4" "..... content3 content3 content3 content3 ..... content4 content4 content4 content4";
+  grid-row-gap: 10px;
+  background-color: red;
 }
 
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:row;
-  background-color: grey;
-  top: 0;
-  left: 0;
+/* define grid areas */
+#icon1 {grid-area:icon1;}
+#icon2 {grid-area:icon2;}
+#icon3 {grid-area:icon3;}
+#icon4 {grid-area:icon4;}
+#subtitl1 {grid-area:subtitl1;align-self: start;}
+#subtitl2 {grid-area:subtitl2;}
+#subtitl3 {grid-area:subtitl3;}
+#subtitl4 {grid-area:subtitl4;}
+#content1 {grid-area:content1;}
+#content2 {grid-area:content2;}
+#content3 {grid-area:content3;}
+#content4 {grid-area:content4;}
+
+.subtitle {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #333333;
+  line-height: 1.5em;
 }
 
-.my-photo-lg {
-  flex: 50%;
-  background-color: purple;
+.content {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #666;
+  line-height: 1em;
 }
 
-.my-photo-lg a img {
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.icon {
 
-.about-me-text {
-  flex: 50%;
-  background-color: white;
 }
 
 /**** media queries ****/
@@ -67,14 +71,6 @@
 @media screen and (min-width: 769px) {
   .hide-when-mobile {display: block;}
   .mobile-visible {display: none;}
-  .main{top:0px;left:200px;}
+  .main{top:0;left:200px;}
 }
 
-/* style to apply to side menu when in mobile mode */
-.mobile-header-view {
-  display: block;
-  top: 50px;
-  left: 0px;
-  width: 300px;
-  box-shadow: 3px 0px 3px 0px rgba(0,0,0,0.2);
-}

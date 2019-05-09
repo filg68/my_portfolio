@@ -1,0 +1,28 @@
+/**** Styles About Me Image and Text ****/
+/* Fil Gambatesa - 2019 */
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    background-color: grey;
+    top: 0;
+    left: 0;
+}
+
+.my-photo-lg {
+    flex: 50%;
+    background-color: purple;
+}
+
+.my-photo-lg a img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-me-text {
+    flex: 50%;
+    background-color: white;
+}

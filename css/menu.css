@@ -188,4 +188,11 @@ ul#nav{
   display: none;
 }
 
-
+/* style to apply to side menu when in mobile mode */
+.mobile-header-view {
+  display: block;
+  top: 50px;
+  left: 0;
+  width: 300px;
+  box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+}
