@@ -9,6 +9,27 @@
 
 /*TODO look into changing the default style for the scroll bars*/
 
+.download-cv-btn {
+  display:block;
+  border: 2px solid darkorange;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  width: 150px;
+  height: 40px;
+  line-height: 36px;
+  color: #343434;
+}
+
+.download-cv-btn:hover {
+  color: white;
+  background-color: darkorange;
+}
+
+
+
 .what-I-do {
   display:block;
   position:relative;
