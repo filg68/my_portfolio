@@ -11,7 +11,7 @@
 
 .download-cv-btn {
   display:block;
-  border: 2px solid darkorange;
+  border: 2px solid orange;
   text-decoration: none;
   margin-left: 40px;
   margin-top: 30px;
@@ -26,7 +26,7 @@
 
 .download-cv-btn:hover {
   color: white;
-  background-color: darkorange;
+  background-color: orange;
 }
 
 .what-I-do {
