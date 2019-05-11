@@ -9,20 +9,24 @@
     <meta name="handheldFriendly" content="true">
     <title>Fil Gambatesa</title>
 
-
-
     <!-- Resets for css styles across browsers -->
     <link rel="stylesheet" href="css/normalize.css">
     
-    <!-- Load Font Awesome Files -->
+    <!-- Font Awesome Files -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-Bx4pytHkyTDy3aJKjGkGoHPt3tvv6zlwwjc3iqN7ktaiEMLDPqLSZYts2OjKcBx1" crossorigin="anonymous">
-    
 
     <!-- Website fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
     <!-- Main css file for the web site -->
     <link rel="stylesheet" href="css/main.css">
+
+
+
   </head>
 
   <body>
@@ -116,11 +120,13 @@
 
           <div id="testimonials" class="about-sub-section">
             <div class="section-title">Testimonials</div>
-              <ul>
-                <li>test 1</li>
-                <li>test 2</li>
-                <li>test 3</li>
-              </ul>
+              <div class="owl-carousel owl-theme">
+                <div>test 1</div>
+                <div>test 2</div>
+                <div>test 3</div>
+                <div>test 4</div>
+                <div>test 5</div>
+              </div>
           </div>
 
         </section>
@@ -141,6 +147,9 @@
   <footer>
     <!-- Load jquery  -->
     <script src="js/jquery-3.4.1.js"></script>
+
+    <!-- Owl Carousel -->
+    <script src="owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Load main javascript file -->
     <script src="js/main.js"></script>

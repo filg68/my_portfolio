@@ -3,6 +3,9 @@
 $(function() {
     let sideMenu = $("#side-menu");
 
+    //Initialize the Owl Carousel
+    $(".owl-carousel").owlCarousel();
+
     //if not in mobile size remove mobile header view if attached
     $( window ).resize(function() {
         let screenWidth = $(window).width();
