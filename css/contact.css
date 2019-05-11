@@ -1,0 +1,13 @@
+/******************  Contact Page Styles ***************/
+/* Fil Gambatesa - 2019  */
+
+.page-title {
+    font-family:  'Roboto', Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-right: 50px;
+    color:#333333;
+    border-bottom: 2px solid #eee;
+}
+

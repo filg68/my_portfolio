@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
+/* defaults.css must be loaded first */
+
 @import 'defaults.css';
 @import 'menu.css';
 @import 'about.css';
+@import 'contact.css';
 
-/**** NOTES  ****/
-/* defaults.css must be loaded first */
+/* Developement Classes */
+.hide-section {
+    display:none;
+}
 
 /*TODO look into changing the default style for the scroll bars*/
 
