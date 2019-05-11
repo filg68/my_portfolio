@@ -4,10 +4,55 @@
 .page-title {
     font-family:  'Roboto', Helvetica, sans-serif;
     font-size: 30px;
-    font-weight: 600;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-weight: 800;
+    margin: 20px 50px 8px;
     color:#333333;
     border-bottom: 2px solid #eee;
 }
 
+.info-boxes {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:30px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.info-box {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    height: 100px;
+    width: 200px;
+    margin: 10px 0 10px;
+    color:#333333;
+    border: 1px solid #eee;
+    text-align: center;
+
+}
+
+.info-box p {
+    font-family:  'Open Sans', Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.info-box i {
+    margin-top:20px;
+    font-size:2.25em;
+    color: #b5b5b5;
+
+}
+
+#map {
+    display:block;
+    margin: 20px 50px 8px;
+    background-size: cover;
+    height: 125px;
+    background: #aeaeae url("/assets/gta_map.png") no-repeat center;
+
+}
