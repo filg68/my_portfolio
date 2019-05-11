@@ -1,7 +1,8 @@
-/**** Styles About Me Image and Text ****/
-/* Fil Gambatesa - 2019 */
+/******************  About Page Styles ***************/
+/* Fil Gambatesa - 2019  */
 
-/***** Bio Info Sub-Section *****/
+
+/******************  Picture and About Text ***************/
 
 .bio-container {
     display: flex;
@@ -85,7 +86,7 @@
     background-color: orange;
 }
 
-/***** what-I-do sub-section styles *****/
+/******************  What I Do Sub-Section ***************/
 .about-sub-section {
     display:block;
     position:relative;
@@ -160,4 +161,35 @@
     justify-self: left;
     color: lightgray;
 
+}
+
+
+.testimonial {
+    background-color: #fdfdfd;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding:10px;
+    width: 80%;
+    height: auto;
+}
+
+/******************  Testimonials Sub-Section ***************/
+.testimonial-text {
+    color: #666;
+}
+
+.contributor {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color:#222;
+    font-weight:900;
+    font-size:1.15em;
+    padding-left: 10px;
+}
+
+.contributor-company {
+    color: #666;
+    font-weight: 400;
+    font-size:.9em;
+    padding-left: 10px;
 }
