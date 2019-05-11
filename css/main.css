@@ -8,8 +8,11 @@
 /* defaults.css must be loaded first */
 
 /*TODO look into changing the default style for the scroll bars*/
-
-
+.about-sub-section {
+    display:block;
+    position:relative;
+    left:50px;
+}
 
 
 
