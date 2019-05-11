@@ -8,11 +8,7 @@
 /* defaults.css must be loaded first */
 
 /*TODO look into changing the default style for the scroll bars*/
-.about-sub-section {
-    display:block;
-    position:relative;
-    left:50px;
-}
+
 
 .testimonial {
     background-color: #fdfdfd;
@@ -31,14 +27,14 @@
 .contributor {
     font-family: 'Roboto', Helvetica, sans-serif;
     color:#222;
-    weight:900;
+    font-weight:900;
     font-size:1.15em;
     padding-left: 10px;
 }
 
 .contributor-company {
     color: #666;
-    weight: 400;
+    font-weight: 400;
     font-size:.9em;
     padding-left: 10px;
 }
