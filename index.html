@@ -201,7 +201,35 @@
               <i class="fal fa-pray"></i>
               <p>Please Hire Me</p>
             </div>
+          </div>
 
+          <div class="contact-form-container">
+            <div class="section-title">How Can I Help You?</div>
+
+            <div class="contact-form">
+              <form action="#" method="post">
+                <div class="input-container">
+                  <input id="full-name" class="form-control" type="text" name="full_name" placeholder="Full Name">
+                  <input id="e-mail" class="form-control" type="text" name="e-mail" placeholder="Email Address">
+                  <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject">
+                  <textarea id="message" class="contact-message" type="textarea" name="message" placeholder="message"></textarea>
+                </div>
+                <html>
+                  <head>
+                    <title>reCAPTCHA demo: Simple page</title>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                  </head>
+                  <body>
+                  <form action="?" method="POST">
+                    <div class="g-recaptcha" data-sitekey="your site key"></div>
+                  </form>
+                  </body>
+                  </html>
+                <div >
+                  <button type="submit" href="#" class="submit-email-btn">Send Message</button>
+                </div>
+              </form>
+            </div>
           </div>
 
         </section>

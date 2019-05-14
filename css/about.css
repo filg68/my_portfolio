@@ -66,6 +66,7 @@
 
 }
 
+/*TODO - Make this a generic button style and move to main.css*/
 .download-cv-btn {
     display:block;
     border: 2px solid orange;
@@ -163,7 +164,6 @@
     color: lightgray;
 
 }
-
 
 .testimonial {
     background-color: #fdfdfd;

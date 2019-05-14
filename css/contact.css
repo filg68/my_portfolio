@@ -1,6 +1,10 @@
 /******************  Contact Page Styles ***************/
 /* Fil Gambatesa - 2019  */
 
+#contact {
+/*    TODO - when showing the contact form set the height of the main page to 80%*/
+}
+
 .page-title {
     font-family:  'Roboto', Helvetica, sans-serif;
     font-size: 30px;
@@ -55,4 +59,63 @@
     height: 125px;
     background: #aeaeae url("/assets/gta_map.png") no-repeat center;
 
+}
+
+.contact-form-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+            "name message"
+            "email message"
+            "subject message";
+    grid-row-gap: 10px;
+    margin:0;
+    padding:0;
+}
+
+.form-control {
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.contact-message {
+    border: 1px solid #dfdfdf;
+    margin:0;
+    padding:10px;
+    height:100%;
+}
+
+/* Define grid layout */
+#full-name {grid-area: name;}
+#e-mail    {grid-area: email;}
+#subject   {grid-area: subject;}
+#message   {grid-area: message;}
+
+.g-recaptcha {
+    margin-top: 20px;
+}
+
+/*TODO combine with download cv button style and move to main.css*/
+.submit-email-btn {
+    display:block;
+    border: 2px solid orange;
+    text-decoration: none;
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 40px;
+    line-height: 36px;
+    color: #343434;
+    background-color: transparent;
 }
