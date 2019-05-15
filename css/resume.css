@@ -1,0 +1,118 @@
+/******************  Resme Page Styles ***************/
+/* Fil Gambatesa - 2019  */
+
+
+/****** Organizing Containers ******/
+#resume-container{
+    display:flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#resume-left-side {
+    display:inline-block;
+    width:70%;
+    padding-right:30px;
+}
+
+#resume-right-side {
+    display:inline-block;
+    width:30%;
+}
+
+/********** Education Sub-Section *********/
+#education {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:1fr 1fr;
+    grid-row-gap:10px;
+    grid-template-areas:
+            "school1 degree1"
+            "school2 degree2"
+            "school3 degree3"
+            "school4 degree4";
+    margin:0;
+    padding:0;
+}
+
+#school1 {grid-area: school1;}
+#school2 {grid-area: school2;}
+#school3 {grid-area: school3;}
+#school4 {grid-area: school4;}
+#degree1 {grid-area: degree1;}
+#degree2 {grid-area: degree2;}
+#degree3 {grid-area: degree3;}
+#degree4 {grid-area: degree4;}
+
+.school {
+    text-align: right;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.degree {
+    padding-left: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 800;
+}
+
+.double-height {
+    height:28px;
+}
+
+
+/********** Experience Sub-Section *********/
+#experience {
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:auto;
+    grid-row-gap:10px;
+    grid-template-areas:
+            "year1 title1"
+            "company1 experience1"
+            "year2 title2"
+            "company2 experience2";
+    margin:0;
+    padding:0;
+}
+
+ul {
+    margin:0;
+    padding-left:20px;
+    padding-top:0;
+    padding-bottom:5px;
+}
+
+.year, .company{
+    text-align: right;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.title {
+    padding-left: 20px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 800;
+}
+
+.loose {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.tight li {
+    list-style-type: circle;
+    padding-bottom:0;
+    padding-right: 10px;
+}
+
+/******* Languages Subsection *******/
+

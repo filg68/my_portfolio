@@ -170,15 +170,76 @@
 
         </section>
 
-        <section class="hide-section" id="resume">
-          <div>Resume</div>
+        <section id="resume">
+          <div class="page-title">Resume</div>
+
+          <div id="resume-container">
+            <div id="resume-left-side">
+              <div class="section-title">Education</div>
+              <div id="education">
+                <a id="school1" class="school">University of Toronto</a>
+                <a id="school2" class="school">Rotman School of Business</a>
+                <a id="school3" class="school">Rogers</a>
+                <a id="school4" class="school">University of Windsor</a>
+                <a id="degree1" class="degree">Full Stack Development Bootcamp</a>
+                <a id="degree2" class="degree">Strategy and Design Thinking</a>
+                <a id="degree3" class="degree double-height">Lean Six Sigma Black Belt</a>
+                <a id="degree4" class="degree">Bachelor of Science</a>
+              </div>
+              <div class="section-title">Experience</div>
+              <div id="experience">
+                <a id="year1" class="year">2019 - </a>
+                <a id="title1" class="title"> Full Stack Developer</a>
+                <a id="company1" class="company">Freelance</a>
+                <ul id="experience1" class="experience">
+                  <li class="loose">Redesigning Playful Path to Reading website based on a JAMstack architecture</li>
+                    <ul>
+                      <li class="tight">Adding additional course modules</li>
+                      <li class="tight">Adding expert system to make recommendations based on work completed</li>
+                      <li class="tight">Migrating site from current hosting provider to Netlify</li>
+                    </ul>
+                </ul>
+
+                <a id="year2" class="year">2014-2018</a>
+                <a id="title2" class="title">Sr. Director, Technology Transformation</a>
+                <a id="company2" class="company">CIBC</a>
+                <UL id="experience2" class="experience">
+                  <li class="loose">Launched CIBC’s Agile Transformation by finding creative opportunities to partner with stakeholders
+                    across the bank to create the right conditions for Agile to prosper and thrive in a complex banking environment.</li>
+                  <li class="loose">Streamlined CIBC’s traditional waterfall methodology by removing a third of the processes and
+                    templates in the Requirements, Development and Testing Methodologies to reduce paperwork and
+                    increase end user adoption.</li>
+                  <li class="loose">Defined and launched risk based testing practices across all Technology teams to reduce testing time</li>
+                </UL>
+              </div>
+            </div>
+            <div id="resume-right-side">
+              <div class="section-title">Languages</div>
+                <p>Javascript, HTML, CSS</p>
+                <p>Ruby, Python</p>
+                <p>Swift</p>
+              <div class="section-title">Frameworks</div>
+                <p>Rails</p>
+                <p>React</p>
+              <div class="section-title">Cloud Services</div>
+                <p>AWS S3</p>
+                <p>Heroku, Netlify</p>
+                <p>Github</p>
+              <div class="section-title">Architectures</div>
+                <p>SPA - Single Page Architecture</p>
+                <p>JAMStack</p>
+                <p>Client\Server</p>
+            </div>
+
+
+          </div>
         </section>
 
         <section class="hide-section" id="portfolio">
           <div>Portfolio</div>
         </section>
 
-        <section id="contact">
+        <section class="hide-section" id="contact">
 
           <div class="page-title">Contact</div>
 
@@ -214,7 +275,7 @@
                   <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject">
                   <textarea id="message" class="contact-message" type="textarea" name="message" placeholder="message"></textarea>
                 </div>
-                <html>
+                <html lang="en">
                   <head>
                     <title>reCAPTCHA demo: Simple page</title>
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -224,9 +285,9 @@
                     <div class="g-recaptcha" data-sitekey="your site key"></div>
                   </form>
                   </body>
-                  </html>
+                </html>
                 <div >
-                  <button type="submit" href="#" class="submit-email-btn">Send Message</button>
+                  <button type="submit" class="submit-email-btn">Send Message</button>
                 </div>
               </form>
             </div>

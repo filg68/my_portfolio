@@ -5,12 +5,15 @@
 /*    TODO - when showing the contact form set the height of the main page to 80%*/
 }
 
+/* TODO - Move this to main.css as its used by more than one page.*/
 .page-title {
     font-family:  'Roboto', Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 800;
-    margin: 20px 50px 8px;
-    color:#333333;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 8px;
     border-bottom: 2px solid #eee;
 }
 
@@ -109,7 +112,7 @@
     display:block;
     border: 2px solid orange;
     text-decoration: none;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 30px;
     text-align: center;
     vertical-align: middle;

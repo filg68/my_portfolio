@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/******************  Common Styles ***************/
+/* Fil Gambatesa - 2019  */
 
 /* defaults.css must be loaded first */
 
@@ -6,6 +8,7 @@
 @import 'menu.css';
 @import 'about.css';
 @import 'contact.css';
+@import 'resume.css';
 
 /* Developement Classes */
 .hide-section {
