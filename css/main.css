@@ -12,11 +12,28 @@
 
 /* Developement Classes */
 .hide-section {
-    display:none;
+
 }
 
 /*TODO look into changing the default style for the scroll bars*/
 
+.btn-orange {
+    display:block;
+    border: 2px solid orange;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 150px;
+    height: 40px;
+    line-height: 36px;
+    color: #343434;
+    background-color:white;
+}
+
+.btn-orange:hover {
+    color: white;
+    background-color: orange;
+}
 
 
 /*************************  media queries ************************/

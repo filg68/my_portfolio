@@ -109,16 +109,6 @@
 
 /*TODO combine with download cv button style and move to main.css*/
 .submit-email-btn {
-    display:block;
-    border: 2px solid orange;
-    text-decoration: none;
     margin-left: 0;
     margin-top: 30px;
-    text-align: center;
-    vertical-align: middle;
-    width: 150px;
-    height: 40px;
-    line-height: 36px;
-    color: #343434;
-    background-color: transparent;
 }
