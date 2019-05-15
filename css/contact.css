@@ -1,21 +1,9 @@
 /******************  Contact Page Styles ***************/
 /* Fil Gambatesa - 2019  */
 
-#contact {
-/*    TODO - when showing the contact form set the height of the main page to 80%*/
-}
 
-/* TODO - Move this to main.css as its used by more than one page.*/
-.page-title {
-    font-family:  'Roboto', Helvetica, sans-serif;
-    font-size: 28px;
-    font-weight: 800;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 8px;
-    border-bottom: 2px solid #eee;
-}
+/*    TODO - when showing the contact form set the height of the main page to 80%*/
+
 
 .info-boxes {
     display:flex;
@@ -107,7 +95,6 @@
     margin-top: 20px;
 }
 
-/*TODO combine with download cv button style and move to main.css*/
 .submit-email-btn {
     margin-left: 0;
     margin-top: 30px;
