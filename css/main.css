@@ -105,6 +105,33 @@
 @media screen and (max-width: 768px){
   .about-me-title {margin-top: 0; padding-top: 10px;}
   .my-photo-lg {min-height:300px;}
+    #resume-container{
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #resume-left-side {
+        display:block;
+        width:100%;
+        height:auto;
+        padding-right:0;
+    }
+
+    #resume-right-side {
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        width:100%;
+        height:auto;
+        border-top: 1px solid #eee;
+    }
+
+    .languages, .architecture, .cloud-services, .frameworks {
+        flex-basis: 200px;
+
+    }
 }
 
 @media screen and (max-width: 1000px){
