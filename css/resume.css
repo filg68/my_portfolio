@@ -100,9 +100,13 @@
 
 .tight {
     list-style-type: circle;
-    padding-bottom:0;
+    padding-bottom: 0;
     padding-right: 10px;
     margin-left: 40px;
+}
+
+.last-in-list {
+    padding-bottom: 20px;
 }
 
 /******* Languages Subsection *******/
