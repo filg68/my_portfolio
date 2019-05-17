@@ -179,9 +179,10 @@ ul#nav{
   float: right;
 }
 
-.mobile-menu-icon i {
+#menu-icon {
   font-size: 1.6em;
   color: #000;
+  text-decoration: none;
 }
 
 .mobile-visible {
