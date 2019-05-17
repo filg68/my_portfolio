@@ -28,7 +28,9 @@ $(function() {
     });
 
     //toggle the side-menu in mobile view
-    $("#menu-icon").click(function() { toggleSideMenu(sideMenu); });
+    $("#menu-icon").click(function() {
+        alert("you clicked me!");
+        toggleSideMenu(sideMenu); });
 
 });
 
