@@ -285,19 +285,14 @@
                   <input id="full-name" class="form-control" type="text" name="full_name" placeholder="Full Name">
                   <input id="e-mail" class="form-control" type="text" name="e-mail" placeholder="Email Address">
                   <input id="subject" class="form-control" type="text" name="subject" placeholder="Subject">
-                  <textarea id="message" class="contact-message" type="textarea" name="message" placeholder="message"></textarea>
+                  <textarea id="message" class="contact-message" type="textarea" name="message" placeholder="Message"></textarea>
                 </div>
-                <html lang="en">
-                  <head>
-                    <title>reCAPTCHA demo: Simple page</title>
-                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                  </head>
-                  <body>
+
+                  <!-- Recaptacha form  -->
                   <form action="?" method="POST">
                     <div class="g-recaptcha" data-sitekey="your site key"></div>
                   </form>
-                  </body>
-                </html>
+
                 <div >
                   <button type="submit" class="submit-email-btn btn-orange">Send Message</button>
                 </div>
@@ -317,6 +312,9 @@
 
     <!-- Load main javascript file -->
     <script src="js/main.js"></script>
+
+    <!-- Recaptcha javascript file   -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </footer>
 
   </body>
