@@ -196,7 +196,7 @@
   .main{top:0;left:200px;}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
     #resume-container, #portfolio-container, #about, .what-I-do-grid, .about-sub-section, .page-title{
         margin-left: 10px;
         margin-right: 10px;
