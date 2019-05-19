@@ -82,7 +82,10 @@
 
 /*************************  media queries ************************/
 
+
+
 /* redefine grid for mobile view */
+
 @media screen and (max-width:600px) {
 
     /* Contact Page - Mobile View*/
@@ -193,3 +196,22 @@
   .main{top:0;left:200px;}
 }
 
+@media screen and (max-width: 320px) {
+    #resume-container, #portfolio-container, #about, .what-I-do-grid, .about-sub-section, .page-title{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .info-boxes {
+        flex-direction: column;
+    }
+
+    .info-box {
+        flex-basis: 100px;
+    }
+
+    #resume-right-side {
+        justify-content: flex-start;
+        left:10px;
+    }
+}
