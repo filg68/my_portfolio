@@ -34,9 +34,10 @@
 
 .portfolio-figure{
     margin:0;
-    border: 1px solid orange;
     text-align:center;
-    z-index:5;
+    width: 281px;
+    height:202px;
+    border:1px solid #b5b5b5;
 }
 
 .no-border {

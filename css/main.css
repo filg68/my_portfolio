@@ -178,9 +178,6 @@
         text-align:center;
     }
 
-    .portfolio-figure > img {
-        border:1px solid #b5b5b5;
-    }
 }
 
 @media screen and (max-width: 1000px){
