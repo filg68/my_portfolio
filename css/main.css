@@ -103,8 +103,11 @@
         padding:0;
     }
 
+    .form-control {
+        margin-right: 0px;
+    }
+
     .contact-message {
-        margin-right:10px;
         height: 150px;
     }
 
@@ -155,7 +158,7 @@
     }
 
     .languages, .architecture, .cloud-services, .frameworks {
-        flex-basis: 200px;
+        flex-basis: 150px;
     }
 
     #portfolio-container{
@@ -175,12 +178,13 @@
     .portfolio-figure{
         margin: 10px 0 20px;
         border:none;
-        text-align:center;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        width:100%;
+
     }
 
-    .portfolio-figure > img {
-        border:1px solid #b5b5b5;
-    }
 }
 
 @media screen and (max-width: 1000px){
@@ -196,12 +200,13 @@
   .main{top:0;left:200px;}
 }
 
-@media screen and (max-width: 375px) {
-    #resume-container, #portfolio-container, #about, .what-I-do-grid, .about-sub-section, .page-title{
+@media screen and (max-width: 414px) {
+    #resume-container, #portfolio-container, #about, .what-I-do-grid, .about-sub-section, .page-title {
         margin-left: 10px;
         margin-right: 10px;
     }
 
+    /*Contact page info boxes*/
     .info-boxes {
         flex-direction: column;
     }
@@ -210,8 +215,35 @@
         flex-basis: 100px;
     }
 
+    /*Skills and Languages*/
     #resume-right-side {
-        justify-content: flex-start;
-        left:10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 10px;
+    }
+
+    /*Center bio-container info and btn*/
+    .download-cv-btn {
+        margin: 30px auto 30px auto;
+    }
+
+    .about-me-name {
+        margin-top: 20px;
+    }
+
+    /*Center Owlcarousel content*/
+    .testimonial {
+        margin: 0px auto;
+    }
+
+    .contributor, .contributor-company {
+        margin-left: 30px;
+    }
+
+    /* Center Send Message Button */
+    .submit-email-btn {
+        margin: 10px auto 20px auto;
     }
 }
