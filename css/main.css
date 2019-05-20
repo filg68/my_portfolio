@@ -9,6 +9,7 @@
 @import 'about.css';
 @import 'contact.css';
 @import 'resume.css';
+@import 'portfolio.css';
 
 /* Developement Classes */
 /*TODO add back display:none; and create js script to manage*/
@@ -81,8 +82,32 @@
 
 /*************************  media queries ************************/
 
+
+
 /* redefine grid for mobile view */
+
 @media screen and (max-width:600px) {
+
+    /* Contact Page - Mobile View*/
+    .input-container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+                "name"
+                "email"
+                "subject"
+                "message";
+        grid-row-gap: 10px;
+        margin:0;
+        padding:0;
+    }
+
+    .contact-message {
+        margin-right:10px;
+        height: 150px;
+    }
+
   .what-I-do-grid {
     display: grid;
     left: 5px;
@@ -99,6 +124,7 @@
             "..... content4";
     grid-row-gap: 10px;
   }
+
 }
 
 /* show mobile header for small screens */
@@ -130,8 +156,28 @@
 
     .languages, .architecture, .cloud-services, .frameworks {
         flex-basis: 200px;
-
     }
+
+    #portfolio-container{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:30px;
+    }
+
+    .portfolio-item-description {
+        position:relative;
+        margin-top: 35px;
+        padding-right: 0;
+    }
+
+    .portfolio-figure{
+        margin: 10px 0 20px;
+        border:none;
+        text-align:center;
+    }
+
 }
 
 @media screen and (max-width: 1000px){
@@ -147,3 +193,22 @@
   .main{top:0;left:200px;}
 }
 
+@media screen and (max-width: 375px) {
+    #resume-container, #portfolio-container, #about, .what-I-do-grid, .about-sub-section, .page-title{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .info-boxes {
+        flex-direction: column;
+    }
+
+    .info-box {
+        flex-basis: 100px;
+    }
+
+    #resume-right-side {
+        justify-content: flex-start;
+        left:10px;
+    }
+}

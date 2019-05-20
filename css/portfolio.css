@@ -1,0 +1,45 @@
+/******************  Portfolio Page Styles ***************/
+/* Fil Gambatesa - 2019  */
+
+#portfolio-container{
+    display:grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-row-gap: 10px;
+    grid-auto-columns: auto;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top:30px;
+}
+
+.portfolio-item{
+    display: block;
+    position:relative;
+}
+
+.portfolio-item-description {
+    position:absolute;
+    margin-top: 35px;
+    padding-right: 10px;
+
+}
+
+.portfolio-item-title{
+    position:absolute;
+    font-weight:900;
+    margin-top: 0;
+    padding-bottom:5px;
+    border-bottom: 2px solid orange;
+
+}
+
+.portfolio-figure{
+    margin:0;
+    text-align:center;
+    width: 281px;
+    height:202px;
+    border:1px solid #b5b5b5;
+}
+
+.no-border {
+    border: none;
+}
