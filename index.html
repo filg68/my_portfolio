@@ -321,7 +321,7 @@
             <h2 class="section-title">How Can I Help You?</h2>
 
             <div class="contact-form">
-              <form action="#" method="post">
+              <form name="contact" action="#" method="post" data-netlify-recaptcha="true" data-netlify="true">
                 <div class="input-container">
                   <input id="full-name" class="form-control" type="text" name="full_name" placeholder="Full Name">
                   <input id="e-mail" class="form-control" type="text" name="e-mail" placeholder="Email Address">
@@ -329,10 +329,8 @@
                   <textarea id="message" class="contact-message" type="textarea" name="message" placeholder="Message"></textarea>
                 </div>
 
-                  <!-- Recaptacha form  -->
-                  <form action="?" method="POST">
-                    <div class="g-recaptcha" data-sitekey="your site key"></div>
-                  </form>
+                <!-- Recaptacha form  -->
+                <div data-netlify-recaptcha="true"></div>
 
                 <div >
                   <button type="submit" class="submit-email-btn btn-orange">Send Message</button>
