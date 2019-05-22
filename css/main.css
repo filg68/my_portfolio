@@ -187,7 +187,7 @@
 
 }
 
-@media screen and (max-width: 1001px){
+@media screen and (max-width: 999px){
   .mobile-visible {display:inline-block;}
   .hide-when-mobile {left:-180px;}
   .main {top:50px; left:0; width:100%;}
