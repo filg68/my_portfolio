@@ -37,6 +37,7 @@ $(function() {
     $(".menu-item").click(function () {
         let sel = $(this).data("item");
         toggleActivePage(sel);
+        if (sideMenu.hasClass("mobile-header-view")) {toggleSideMenu((sideMenu))};
     });
 
 });
