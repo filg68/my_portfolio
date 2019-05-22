@@ -1,4 +1,7 @@
 
+// initialize global variables
+var myPortfolioGlobals = {"activePage": "about"};
+
 // initialize event handlers for page
 $(function() {
     let sideMenu = $("#side-menu");
@@ -31,10 +34,24 @@ $(function() {
     $("#menu-icon").click(function() {
         toggleSideMenu(sideMenu); });
 
+    $(".menu-item").click(function () {
+        let sel = $(this).data("item");
+        toggleActivePage(sel);
+    });
+
 });
 
 //shared utility functions
 function toggleSideMenu (objToToggle) {
     objToToggle.toggleClass("mobile-header-view");
     objToToggle.toggleClass("hide-when-mobile");
+}
+
+function toggleActivePage (newActivePageValue) {
+
+    let currentActive = $("#" + myPortfolioGlobals.activePage);
+    let newActive = $("#" + newActivePageValue);
+    myPortfolioGlobals.activePage = newActivePageValue;
+    newActive.toggleClass("hide-section");
+    currentActive.toggleClass(("hide-section"));
 }

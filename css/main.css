@@ -14,7 +14,7 @@
 /* Developement Classes */
 /*TODO add back display:none; and create js script to manage*/
 .hide-section {
-
+    display: none;
 }
 
 /*TODO look into changing the default style for the scroll bars*/
