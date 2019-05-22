@@ -1,10 +1,11 @@
 
 // initialize global variables
-var myPortfolioGlobals = {"activePage": "about"};
+let myPortfolioGlobals = {"activePage": "about"};
 
 // initialize event handlers for page
 $(function() {
     let sideMenu = $("#side-menu");
+
 
     //Initialize the Owl Carousel
     $(".owl-carousel").owlCarousel(
@@ -34,6 +35,7 @@ $(function() {
     $("#menu-icon").click(function() {
         toggleSideMenu(sideMenu); });
 
+    //display the appropriate page
     $(".menu-item").click(function () {
         let sel = $(this).data("item");
         toggleActivePage(sel);
@@ -49,10 +51,16 @@ function toggleSideMenu (objToToggle) {
 }
 
 function toggleActivePage (newActivePageValue) {
-
+// Toggles the page being displayed and active menu button
     let currentActive = $("#" + myPortfolioGlobals.activePage);
     let newActive = $("#" + newActivePageValue);
+    let currentButton = $("[href='#" + newActivePageValue + "']");
+    let newButton = $("[href='#" + myPortfolioGlobals.activePage + "']");
+
     myPortfolioGlobals.activePage = newActivePageValue;
     newActive.toggleClass("hide-section");
-    currentActive.toggleClass(("hide-section"));
+    currentActive.toggleClass("hide-section");
+    currentButton.toggleClass("active");
+    newButton.toggleClass("active");
+
 }
