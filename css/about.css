@@ -120,6 +120,14 @@
 
 }
 
+
+
+/******************  Testimonials Sub-Section ***************/
+
+.testimonial-container{
+    background-color: white;
+}
+
 .testimonial {
     background-color: #fdfdfd;
     border: 1px solid #e5e5e5;
@@ -130,7 +138,6 @@
     height: auto;
 }
 
-/******************  Testimonials Sub-Section ***************/
 .testimonial-text {
     color: #666;
 }
