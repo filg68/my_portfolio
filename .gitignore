@@ -18,7 +18,6 @@ Caddyfile
 
 # Files used during development
 lazy_git
-lazy_branch_delete
 lazy*
 .features_and_tasks.html
 .features_and_tasks.css
