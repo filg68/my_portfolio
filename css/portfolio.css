@@ -20,16 +20,14 @@
     position:absolute;
     margin-top: 35px;
     padding-right: 10px;
-
 }
 
 .portfolio-item-title{
     position:absolute;
     font-weight:900;
     margin-top: 0;
-    padding-bottom:5px;
-    border-bottom: 2px solid orange;
-
+    border-bottom: 1px solid orange;
+    line-height: 1.5em;
 }
 
 .portfolio-figure{
