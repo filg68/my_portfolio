@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sed -i"" "s|GOOGLE_MAPS_API|${GOOGLE_MAPS_API}|" index.html
+STATUS=$?
+echo $STATUS
