@@ -13,6 +13,7 @@ $(function() {
             items:2,
             autoplay:true,
             autoplayTimeout:5000,
+            autoplayHoverPause:true,
             responsiveClass:true,
             loop:true,
             responsive: {
