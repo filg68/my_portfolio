@@ -23,7 +23,7 @@ of applications.
 
 ## Versioning
 
- Current production version is 1.
+ Current production version is 1.0.2
 
 ## Authors
 
