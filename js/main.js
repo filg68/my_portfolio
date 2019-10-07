@@ -13,6 +13,7 @@ $(function() {
             items:2,
             autoplay:true,
             autoplayTimeout:5000,
+            autoplayHoverPause:true,
             responsiveClass:true,
             loop:true,
             responsive: {
@@ -63,4 +64,14 @@ function toggleActivePage (newActivePageValue) {
     currentButton.toggleClass("active");
     newButton.toggleClass("active");
 
+}
+
+function initMap() {
+    // Set map center so Toronto is visible
+    var centerLoc = {lat: 43.35, lng: -79.833333};
+    // The location of Hamilton
+    var markerLoc = {lat: 43.25, lng: -79.833333};
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 7, center: centerLoc});
+    var marker = new google.maps.Marker({position: markerLoc, map: map});
 }
