@@ -55,7 +55,6 @@
           <div class="social-links">
             <a href="https://github.com/filg68"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/fil-gambatesa-946ab71/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://medium.com/@runfilrun"><i class="fab fa-medium"></i></a>
           </div>
 
           <!-- Copyrights -->
@@ -235,15 +234,17 @@
 
               <div class="skills frameworks">
                 <h2 class="section-title">Frameworks</h2>
-                <p>Rails</p>
                 <p>React</p>
+                <p>Express</p>
+                <p>Node</p>
+                <p>Rails</p>
               </div>
 
               <div class="skills cloud-services">
                 <h2 class="section-title">Cloud Services</h2>
                 <p>AWS S3</p>
                 <p>Heroku, Netlify</p>
-                <p>Github</p>
+                <p>Github, CircleCi, TravisCi</p>
               </div>
 
               <div class="skills architecture">
@@ -260,38 +261,24 @@
         </section>
 
         <section class="hide-section" id="portfolio">
-          <h1 class="page-title">Portfolio</h1>
+          <h1 class="page-title">Portfolio (click image to go to website)</h1>
           <div id="portfolio-container">
 
-            <!-- Cycling Inspiration -->
+            <!-- Optio -->
             <div class="portfolio-item">
-              <div class="portfolio-item-title">My Portfolio</div>
+              <div class="portfolio-item-title">Optio</div>
               <div class="repo-link-container">
-                <a href="https://github.com/filg68/my_portfolio" ><i class="repo-link fab fa-github"></i></a>
+                <a href="https://github.com/filg68/team-evergreen" ><i class="repo-link fab fa-github"></i></a>
               </div>
-              <p class="portfolio-item-description">Responsive website built using SPA architecture, hosted on Netlify
-                to leverage a serverless infrastructure.  Includes connections to Google maps and Google reCaptcha via API.
-                Continuous deployment pipeline managed via Netlify integration with GitHub.</p>
+              <p class="portfolio-item-description">MongoDB, Express, React and Node application that uses AWS S3 service
+                to store and retrieve images.  Styles created using Material\UI for React.  Application is hosted on Heroku
+                with automatic code deploy and build managed via push to GitHub.  The application creates polls that you
+                can send to friends to have them vote on which option they prefer.  Application can be accessed
+                via Demo User button on login page, or you can create an account.
             </div>
             <figure class="portfolio-figure">
-              <a>
-                <img src="assets/my_portfolio.png" alt="Fil Gambatesa Portfolio Site" >
-              </a>
-            </figure>
-
-            <!-- Cycling Inspiration -->
-            <div class="portfolio-item">
-              <div class="portfolio-item-title">Cycling Inspiration</div>
-              <div class="repo-link-container">
-                <a href="https://github.com/filg68/splurty" ><i class="repo-link fab fa-github"></i></a>
-              </div>
-              <p class="portfolio-item-description">Rails website using a Postgres database that displays inspirational quotes
-                related to bicycling. Site is hosted on Heroku and code deploys are managed via git push.  Allows anyone
-                to add quotes to the database.
-            </div>
-            <figure class="portfolio-figure">
-              <a href="https://splurty-fil-gambatesa.herokuapp.com">
-                <img src="assets/splurty.png" alt="Cycling Quotes Website">
+              <a href="https://optio-evergreeen.herokuapp.com/login">
+                <img src="assets/optio.png" alt='Send polls to friends to get their opinion'>
               </a>
             </figure>
 
@@ -306,7 +293,6 @@
                 course structure and users.  Integrates with AWS S3 service to manage and serve video files, and Stripe
                 for payment processing.  App was built as a demo to bid on contract to redesign Playful Path to Learning.
             </div>
-
             <figure class="portfolio-figure no-border">
               <a href="https://eteach-demo.herokuapp.com">
                 <img src="assets/eTeach.png" alt="eTeach Website">
@@ -323,10 +309,25 @@
                 'Grams' and comment on other users 'Grams.  App was built as part of Bootcamp work for one of the assignments.
                 Hosted on Heroku.
             </div>
+          <figure class="portfolio-figure no-border">
+            <a href="https://grammable-gamba.herokuapp.com/">
+              <img src="assets/grammable.png" alt="Grammable Website">
+            </a>
+          </figure>
 
-            <figure class="portfolio-figure no-border">
-              <a href="https://grammable-gamba.herokuapp.com/">
-                <img src="assets/grammable.png" alt="Grammable Website">
+            <!-- Cycling Inspiration -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-title">Cycling Inspiration</div>
+              <div class="repo-link-container">
+                <a href="https://github.com/filg68/splurty" ><i class="repo-link fab fa-github"></i></a>
+              </div>
+              <p class="portfolio-item-description">Rails website using a Postgres database that displays inspirational quotes
+                related to bicycling. Site is hosted on Heroku and code deploys are managed via git push.  Allows anyone
+                to add quotes to the database.
+            </div>
+            <figure class="portfolio-figure">
+              <a href="https://splurty-fil-gambatesa.herokuapp.com">
+                <img src="assets/splurty.png" alt="Cycling Quotes Website">
               </a>
             </figure>
 
